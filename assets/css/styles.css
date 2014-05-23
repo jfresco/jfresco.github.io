@@ -1,0 +1,28 @@
+body {
+  background-image: url(../images/cubes.png);
+  background-attachment: fixed;
+}
+
+* {
+  font-family:  'Roboto';
+}
+
+.sd-flash-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 7000;
+}
+
+.sd-drop-placeholder {
+  background-color: #FFFF99;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: #FFFF66;
+}
+
+/*
+ul.chosen-choices li.search-field input.default {
+  height: auto !important;
+}*/
