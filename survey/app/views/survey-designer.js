@@ -27,6 +27,8 @@ SD.Views.SurveyDesigner = Backbone.View.extend({
       });
 
       $("#sd-audience-select").chosen();
+
+      $(".sd-rich").wysihtml5();
     });
   }
 });
