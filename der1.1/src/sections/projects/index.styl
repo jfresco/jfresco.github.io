@@ -1,0 +1,86 @@
+section.section.proyectos
+  background #fff
+  background-size 110%
+  min-height 400px
+
+  .proyectos-content
+    display flex
+    flex-flow row wrap
+    justify-content center
+
+    .proyectos-item
+      position relative
+      min-width 250px
+      max-width 300px
+      padding 1px 1px
+
+  .projects
+    text-align center
+
+    .project-card
+      height 200px
+      transition all 0.4s ease
+
+      .expand
+        position relative
+
+      .description-overlay
+        position absolute
+        top auto
+        left 0
+        min-width 100%
+        height 0
+        background-color #f9f9f9
+        overflow hidden
+        transition all 0.4s ease
+
+        .screenshots
+          width 50%
+          float left
+
+          img
+            height 350px
+            padding 20px 20px
+
+        .text
+          width 50%
+          float right
+
+          p
+            padding-top 20px
+            padding-right 40px
+            padding-left 0
+
+        /* Screenshots won't be shown on small screen */
+        @media screen and (max-width: 780px)
+          .screenshots
+            display none
+          .text
+            width 100%
+
+        .close
+          float right
+          font-size 40px
+          padding 10px 10px
+
+      /* When the description is expanded */
+      &.expanded
+        height 605px
+
+        /* Show the arrow /\ on top of the description div */
+        .expand:after
+          top auto
+          border solid transparent
+          content " "
+          height 0
+          width 0
+          position absolute
+          pointer-events none
+          border-bottom-color #f9f9f9
+          border-width 15px
+          left 50%
+          margin -20px 0 0 -15px
+          bottom -92px
+
+        .description-overlay
+          height 400px
