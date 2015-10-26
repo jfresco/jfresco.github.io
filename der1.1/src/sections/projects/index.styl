@@ -1,5 +1,5 @@
 section.section.proyectos
-  background bg-color-2
+  background bg-color-1
   background-size 110%
   min-height 400px
 
@@ -37,11 +37,13 @@ section.section.proyectos
 
         .screenshots
           width 50%
+          height 100%
           float left
 
           img
-            height 350px
-            padding 20px 20px
+            position relative
+            width 90%
+            padding 40px 20px
 
         .text
           width 50%
@@ -49,7 +51,8 @@ section.section.proyectos
           text-align left
 
           p
-            padding 20px 0
+            padding-top 20px
+            padding-bottom 20px
             padding-right 40px
 
         /* Screenshots won't be shown on small screen */
@@ -58,6 +61,8 @@ section.section.proyectos
             display none
           .text
             width 100%
+            & > *
+              padding-left 20px
 
         .close
           float right
