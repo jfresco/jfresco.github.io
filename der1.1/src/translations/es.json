@@ -13,7 +13,8 @@
     "description": "Nos unimos para innovar donde nadie esta innovando aún, en el sistema político."
   },
   "home": {
-    "description": "Internet está cambiando el sistema político. Desarrollamos estrategias para llevar la democracia al siglo XXI.",
+    "description-line1": "Internet está cambiando el sistema político.",
+    "description-line2": "Desarrollamos estrategias para llevar la democracia al siglo XXI.",
     "call-to-action": "Difundamos"
   },
   "projects": {
@@ -46,7 +47,7 @@
       {
         "title": "Proyecto SOLE",
         "image": "sole.jpg",
-        "screenshots": ["cap-sole.png"],
+        "screenshots": ["cap-sole.jpg"],
         "links": [
           { "text": "soleargentina.org", "url": "http://www.soleargentina.org" }
         ],
@@ -69,7 +70,12 @@
   "we": {
     "title": "Quienes somos",
     "team": "Equipo",
-    "intro": "Somos humanos. Nos gusta pensar sistemas. Creemos en la política y nos encontramos para ayudar a mejorar el sistema democrático. Venimos de distintos lugares, somos activistas, artistas, investigadores, hackers, diseñadores, emprendedores. Coincidimos en que cuantas más voces sean tenidas en cuenta, mejor democracia vamos a tener."
+    "intro": [
+      "Somos humanos. Nos gusta pensar sistemas.",
+      "Creemos en la política y nos encontramos para ayudar a mejorar el sistema democrático.",
+      "Venimos de distintos lugares, somos activistas, artistas, investigadores, hackers, diseñadores, emprendedores.",
+      "Coincidimos en que cuantas más voces sean tenidas en cuenta, mejor democracia vamos a tener."
+    ]
   },
   "team": [
     {
