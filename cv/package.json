@@ -1,0 +1,16 @@
+{
+  "name": "cv",
+  "version": "0.0.1",
+  "description": "Curriculum vitae",
+  "main": "index.js",
+  "scripts": {
+    "build": "jade < src/index.jade > index.html && stylus < src/index.styl > index.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jose Fresco <josemariafresco@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jade": "^1.11.0",
+    "stylus": "^0.52.4"
+  }
+}
