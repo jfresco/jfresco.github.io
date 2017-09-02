@@ -5,20 +5,25 @@ div.hide,
 span.hide {
   display: none;
 }
+code {
+  font-family: 'Roboto Mono';
+}
 body {
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto';
   line-height: 1.8em;
-  margin: 0;
+  max-width: 700px;
+  margin: 2em auto;
 }
 body header {
   padding: 20px 0;
-  text-align: center;
+  text-align: left;
 }
 body header * {
   margin: 0;
 }
 body header h1 {
   margin-bottom: 10px;
+  font-weight: 100;
 }
 body header h2 {
   text-transform: uppercase;
@@ -26,10 +31,6 @@ body header h2 {
   letter-spacing: 0.4em;
   font-size: 19px;
   margin-bottom: 15px;
-}
-body article {
-  max-width: 700px;
-  margin: 0 auto;
 }
 body article ul.clean {
   padding: 0;
@@ -47,6 +48,10 @@ body article ul.bulleted li {
 body article .pic {
   float: right;
   max-width: 100px;
+  border-radius: 4%;
+}
+body article section {
+  padding: 10px 0;
 }
 body article section.experience ul.clean li .name h3 {
   margin-bottom: 0;

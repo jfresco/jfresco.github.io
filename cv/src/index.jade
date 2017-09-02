@@ -15,9 +15,8 @@ head
   link(rel='stylesheet', type='text/css', href='index.css')
 body
   header.header
-    h2 Curriculum vitae
-    h1 José Fresco
-    h3 Full stack web developer
+    //- h2 Curriculum vitae
+    h1 #[strong José Fresco], web developer
     .links.hide
       span.github
         a(href='http://github.com/jfresco') GitHub
@@ -34,55 +33,79 @@ body
     section.bio
       h2 Bio
       ul.clean
-        li Born November 28, 1982 (32 years old)
-        li Single
-        li Autonomous City of Buenos Aires
+        li Born November 28, 1982 (34 years old)
+        li Argentine
+        li Live in Buenos Aires, Argentina
 
     section.skills
       h2 Skills
       ul
-        li I have ~10 years of experience working with object oriented languages and the Web
-        li I'm strong on .NET and Node.js
-        li I have understanding on RESTful architecture
-        li Profficient in HTML, CSS and JavaScript
-        li I'm familiar with trending Web technologies such as React, Backbone, Angular
+        li ~10 years of experience working with object oriented languages and the Web
+        li Strong on .NET and Node.js, as long as in JavaScript development for the browser
+        li Profficient in HTML, CSS and (vanilla) JavaScript/TypeScript, along with modern frameworks and tools such as React, Redux and #[code webpack]
+        li Knowledge on RESTful and non-RESTful architecture, such as GraphQL
         li Knowledge on relational and object oriented databases (i.e., SQL Server, mySQL, mongoDB)
-        li Knowledge on Docker, Redis, microservices, continuous integration
+        li Knowledge on Docker, Redis, microservices, continuous integration, version control systems such as #[code git]
+        li Agile methodologies
 
-    section.education
-      h2 Education
+    section.achievements
+      h2 Achievements
       ul
-        li Started a degree in Systems Engineering in Universidad de Buenos Aires. I'm continuing my career in Universidad Abierta Interamericana. Average: 7.64/10
-        li I made several capacitations including official Microsoft 70-480 (Programming in HTML5 with JavaScript and CSS3)
+        li Designed and implemented Restorando's GraphQL internal API and consumers web mobile app with a React-based stack (both in production)
+        li Lead frontend team towards to implement new features that increased Restorando's apps conversion rate
+        li Rewrite DemocracyOS' build system using #[code gulp] and #[code browserify]
+        li Lead development team of the successful TLN project for Tenaris
+        li Actively participated in courses, workshops and talks in the local JavaScript community
 
     section.experience
       h2 Experience
       ul.clean
-        +work('Fundacion Democracia en Red', 'Since October 2014')
+        +work('Restorando', 'Since Dec 2015')
+          ul.bulleted
+            li Designed and implemented two projects from scratch: codename #[code emmett] and #[code redo-graphql]
+            li As the system owner of both apps, I am responsible for them for being stable, scalable and resilient
+            li I lead the frontend team of the consumers web mobile app for several projects that aims to impact in the business
+        +work('Fundacion Democracia en Red', 'Oct 2014 - Dec 2015 (~1 year)')
           ul.bulleted
             li I worked as Full Stack Developer in the DemocracyOS web app.
             li I introduced new features as long as I worked on existing bugs.
-            li I rewrote entirely the app's build system using Gulp and Browserify.
+            li I rewrote entirely the app's build system using #[code gulp] and #[code browserify].
             li I participated in migrating the app to a SaaS architecture.
             li I also participated in product development decisions.
             li I participated in the organisation of a hackathon and as a juror for a hackathon in France in which several apps regarding civic engagement were presented.
-        +work('Baufest', 'February 2010 - December 2014')
+        +work('Baufest', 'Feb 2010 - Dec 2014 (~5 years)')
           ul.bulleted
             li I started as a Senior .NET Developer working in many web projects for Tenaris.
             li I worked in several projects on the SharePoint platform and in ASP.NET.
             li In 2013 I was promoted to Technical Leader, heading the Development Team in projects for Tenaris and Cencosud.
             li I've been voted by colleagues to be .NET Community Leader for 2 years.
-        +work('Repsol-YPF', 'June 2008 - February 2010')
+        +work('Repsol-YPF', 'Jun 2008 - Feb 2010 (~2 years)')
           p I worked as a Semi-Senior .NET Developer in the maintenance of many intranet applications.
-        +work('Thales Information Systems', 'March 2006 - June 2008')
+        +work('Thales Information Systems', 'Mar 2006 - Jun 2008 (~2 years)')
           p I worked as a .NET Developer in projects for Coca-Cola and Telmex.
-        +work('Early jobs', 'March 2001 - March 2006')
+        +work('Early jobs', 'Mar 2001 - Mar 2006 (~5 years)')
           p I worked as a Computer Technician in organizations such as Rohema.com.ar, Teva & Tuteur and KPMG, as long as an independent consultant.
+
+    section.talks
+      h2 Talks, courses and workshops
+      ul
+        li Node.js course (Platzi.com, nov 2015)
+        li Talk: How we implemented GraphQL and React in Restorando (React Buenos Aires meetup, feb 2016)
+        li Talk: How we migrated our REST API to GraphQL (Meetup.js, nov 2016)
+        li Workshop: Introduction to GraphQL (DevDay Buenos Aires, dec 2016)
+        li Workshop: Introduction to GraphQL (WorkshopJS, jul 2017)
+
+    section.education
+      h2 Education
+      ul
+        li Started a degree in Systems Engineering in Universidad de Buenos Aires
+        li I made several capacitations including official Microsoft 70-480 (Programming in HTML5 with JavaScript and CSS3)
 
     section.other
       h2 Other
       ul
         li I speak Spanish (native) and English.
+        li Hobbies: photography, running, football
 
     section.contact
       h2 Contact
@@ -92,5 +115,5 @@ body
         li See my GitHub profile: github.com/jfresco
         li I share my thoughts on Twitter: @jfresco
 
-    link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,latin-ext', rel='stylesheet', type='text/css')
-
+        link(href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,latin-ext', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Roboto+Mono:400&subset=latin,latin-ext', rel='stylesheet', type='text/css')
